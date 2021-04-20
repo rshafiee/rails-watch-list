@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Create a new List</h1>
+
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, placeholder: 'Romantic' %>
+    <%#= f.association :movie %>
+    <%= f.button :submit, class: 'btn btn-success' %>
+  <% end %>
+
+</div>
+
+

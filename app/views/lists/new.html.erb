@@ -3,7 +3,7 @@
 
   <%= simple_form_for @list do |f| %>
     <%= f.input :name, placeholder: 'Romantic' %>
-    <%#= f.association :movie %>
+    <%= f.input :photo, as: :file %>
     <%= f.button :submit, class: 'btn btn-success' %>
   <% end %>
 
